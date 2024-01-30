@@ -8,7 +8,7 @@ let usersRepository: InMemoryUserRepository
 let sut: AuthenticateUseCase // system under test
 
 describe('Authenticate use case', () => {
-    beforeEach(() =>{
+    beforeEach(() => {
         usersRepository = new InMemoryUserRepository()
         sut = new AuthenticateUseCase(usersRepository)
     })
