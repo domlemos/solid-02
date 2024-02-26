@@ -1,7 +1,7 @@
 import { Prisma, User } from '@prisma/client'
 import { prisma } from '@/lib/prisma'
 import { UsersRepository } from './users-repository'
-import { ResousrceNotFound } from '@/use-cases/errors/resource-not-found-error'
+import { ResourceNotFound } from '@/use-cases/errors/resource-not-found-error'
 
 export class PrismaUserRepository implements UsersRepository {
     async findById(id: string): Promise<User | null> {
